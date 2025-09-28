@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Author" content="Christian Frei">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.1">
+  <style type="text/css">
+    p.p3 {margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #262626; -webkit-text-stroke: #262626; background-color: #f2f2f2}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626; min-height: 16.0px}
+    span.s1 {font-kerning: none}
+    span.s2 {font: 14.0px 'Helvetica Neue'; font-kerning: none; color: #2965a8; -webkit-text-stroke: 0px #2965a8}
+  </style>
+</head>
+<body>
+<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 38.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626"><span class="s1">My First Leaflet Map</span></h1>
+<h4 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 18.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626"><span class="s1"><i>Bharat Dutta</i><i></i></span></h4>
+<h4 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 18.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626"><span class="s1"><i>28 September 2025</i><i></i></span></h4>
+<p class="p3"><span class="s1">The source code is available at <a href="https://github.com/Krysek/Coursera-Data-Science-Specialization-Developing-Data-Products-Week-2-Assignment"><span class="s2">GitHub</span></a>. <a href="https://github.com/Krysek/Coursera-Data-Science-Specialization-Developing-Data-Products-Week-2-Assignment"><span class="s2">Just click here!</span></a></span></p>
+<h2 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 30.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626"><span class="s1">My First Leaflet Map</span></h2>
+<p class="p3"><span class="s1">Create a leaflet map object.</span></p>
+<p class="p5"><span class="s1">library(leaflet)</span></p>
+<p class="p5"><span class="s1">map &lt;- leaflet() %&gt;% addTiles()</span></p>
+<p class="p3"><span class="s1">Create a marker with a picture of Benrath Palace and a link to its homepage.</span></p>
+<p class="p5"><span class="s1">benrathPalaceIcon &lt;- makeIcon(</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">   </span>iconUrl = "http://www.schloss-benrath.de/fileadmin/_processed_/csm_corps-de-logis-blumen_2e04b2b859.jpg",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">   </span>iconWidth = 30*408/255, iconHeight = 30,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">   </span>iconAnchorX = 30*408/255/2, iconAnchorY = 30/2</span></p>
+<p class="p5"><span class="s1">)</span></p>
+<p class="p3"><span class="s1">Add the marker to the map and display the map.</span></p>
+<p class="p5"><span class="s1">benrathPalacePopup &lt;- c("&lt;a href= 'http://www.schloss-benrath.de/welcome/?L=1' &gt;Benrath Palace&lt;br&gt;&lt;img src='http://www.schloss-benrath.de/fileadmin/_processed_/csm_corps-de-logis-blumen_2e04b2b859.jpg' width='210' height='132'<span class="Apple-converted-space">  </span>alt='Foto Corps de Logis' title='Foto Corps de Logi'&gt;&lt;/a&gt;")</span></p>
+<p class="p5"><span class="s1">map %&gt;%</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">   </span>addTiles() %&gt;%</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">   </span>addMarkers(lat=51.161027, lng=6.870550, popup = benrathPalacePopup)</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+</body>
+</html>
